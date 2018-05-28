@@ -11,7 +11,9 @@ class basicStats extends Component {
     }
 
   render() {
-    const info = this.props.stats;
+      
+    const info = this.props.asyncStats;
+
     const stats = Object.keys(info).map((key, index) => {
         const myStats = info[key]
         console.log(myStats)
@@ -24,10 +26,11 @@ class basicStats extends Component {
                 <li>battles: {myStats.battles}</li>
             </ul>
         )
-    })
+    });
+    
     return (
       <div>
-           {stats}
+           {stats}        
       </div>
     )
   }
@@ -35,11 +38,11 @@ class basicStats extends Component {
 
 basicStats.propTypes = {
     getStats : PropTypes.func.isRequired,
-    stats : PropTypes.array.isRequired
+    asyncStats : PropTypes.array.isRequired
 }
 
 const mapStateToProps = state => ({
-    stats: state.get.stats
+    asyncStats: state.get.asyncStats
 })
 
 export default connect(mapStateToProps, { getStats })(basicStats);
