@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getStats } from '../../actions/getActions';
 
@@ -30,6 +31,11 @@ class basicStats extends Component {
       </div>
     )
   }
+}
+
+basicStats.propTypes = {
+    getStats : PropTypes.func.isRequired,
+    stats : PropTypes.array.isRequired
 }
 
 const mapStateToProps = state => ({
