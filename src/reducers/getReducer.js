@@ -49,90 +49,71 @@ const initialState = {
         "Percent": "0.5%"
     }
 ],
-tankStatsByClass : [{
-    "Nation": "U.S.A",
-    "Games": "2464",
-    "Percent": "21%"
-},
-{
-    "Nation": "U.S.S.R",
-    "Games": "3164",
-    "Percent": "27%"
-},
-{
-    "Nation": "France",
-    "Games": "808",
-    "Percent": "6.9%"
-},
-{
-    "Nation": "Germany",
-    "Games": "3136",
-    "Percent": "26.8%"
-},
-{
-    "Nation": "UK",
-    "Games": "621",
-    "Percent": "5.3%"
-},
-{
-    "Nation": "China",
-    "Games": "189",
-    "Percent": "1.6%"
-},
-{
-    "Nation": "Japan",
-    "Games": "1092",
-    "Percent": "9.3%"
-},
-{
-    "Nation": "Czech",
-    "Games": "190",
-    "Percent": "1.6%"
-},
-{
-    "Nation": "Sweden",
-    "Games": "53",
-    "Percent": "0.5%"
-}
+tankStatsByClass : [
+  {
+      "Class": "Medium",
+      "Games": "5169",
+      "Percent": "44.1%"
+  },
+  {
+      "Class": "Heavy",
+      "Games": "2930",
+      "Percent": "25%"
+  },
+  {
+      "Class": "TD",
+      "Games": "1840",
+      "Percent": "15.7%"
+  },
+  {
+      "Class": "SPG",
+      "Games": "673",
+      "Percent": "5.7%"
+  },
+  {
+      "Class": "Light",
+      "Games": "1105",
+      "Percent": "9.4%"
+  },
 ],
 tankStatsByTier : [{
-    "Tier": "I",
+    "Tier": "Tier: I",
     "Games": "51"
 },
 {
-    "Tier": "II",
+    "Tier": "Tier: II",
     "Games": "183"
 },
 {
-    "Tier": "III",
+    "Tier": "Tier: III",
     "Games": "390"
 },
 {
-    "Tier": "IV",
+    "Tier": "Tier: IV",
     "Games": "860"
 },
 {
-    "Tier": "V",
+    "Tier": "Tier: V",
     "Games": "2174"
 },
 {
-    "Tier": "VI",
+    "Tier": "Tier: VI",
     "Games": "1935"
 },
 {
-    "Tier": "VII",
+    "Tier": "Tier: VII",
     "Games": "1754"
 },
 {
-    "Tier": "VIII",
+    "Tier": "Tier: VIII",
     "Games": "2614"
 },
 {
-    "Tier": "IX",
+    "Tier": "Tier: IX",
     "Games": "1584"
 },
 {
-    "Tier": "X",
+    "Tier": "Tier: X",
     "Games": "188"
 }
 ]},
