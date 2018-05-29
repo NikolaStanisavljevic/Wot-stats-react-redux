@@ -8,8 +8,8 @@ export class Main extends Component {
   render() {
     return (
       <div>
-        {/* <BasicStats /> */}
-        {/* <TankStatsByNation /> */}
+        <BasicStats />
+        <TankStatsByNation />
         <TankStatsByTier />
       </div>
     )

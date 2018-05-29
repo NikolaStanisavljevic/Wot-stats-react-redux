@@ -1,6 +1,7 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import { connect } from "react-redux";
+import 'chart.piecelabel.js';
 
 const tankStatsByTier = props => {
 
@@ -50,7 +51,10 @@ const tankStatsByTier = props => {
           legend: {
             display: true,
             position: "right"
-          }
+          },
+          pieceLabel: {
+            render: 'percentage'
+         }
         }}
       />
     </div>
