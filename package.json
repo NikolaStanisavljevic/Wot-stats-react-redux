@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.1.1",
     "chart.js": "^2.7.2",
     "chart.piecelabel.js": "^0.10.0",
     "chartjs-plugin-deferred": "^1.0.1",
@@ -15,6 +16,7 @@
     "react-dom": "^16.4.0",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
+    "reactstrap": "^6.0.1",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0"
   },
