@@ -1,7 +1,6 @@
 import React from "react";
 import { Line} from "react-chartjs-2";
 import { connect } from "react-redux";
-import 'chart.piecelabel.js';
 import 'chartjs-plugin-deferred';
 
 const winRate = props => {
@@ -20,7 +19,7 @@ const winRate = props => {
     labels: [...battles],
     datasets: [
       {
-        label: ["Win Rate/Games played"],
+        label: "Win Rate in %",
         data: [...wRate],
         backgroundColor: "#E74C3C"
       }
@@ -34,7 +33,9 @@ const winRate = props => {
         options={{
           maintainAspectRatio: false,
           title: {
-            display: false
+            display: true,
+            text: "Win Rate / Games played",
+            fontSize: 25
           },
           legend: {
             display: true,

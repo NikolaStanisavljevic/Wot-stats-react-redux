@@ -3,7 +3,7 @@ import { Line} from "react-chartjs-2";
 import { connect } from "react-redux";
 import 'chartjs-plugin-deferred';
 
-const winRate = props => {
+const avgDmg = props => {
 
   const data = props.avgDmg;
 
@@ -11,17 +11,17 @@ const winRate = props => {
     return res.Battles;
   });
 
-  const wRate = data.map(res => {
-    return res.Avrage;
+  const average = data.map(res => {
+    return res.Average;
   });
 
   const chartData = {
     labels: [...battles],
     datasets: [
       {
-        label: ["Win Rate/Games played"],
-        data: [...wRate],
-        backgroundColor: "#E74C3C"
+        label: "Average Damage",
+        data: [...average],
+        backgroundColor: "#3498DB"
       }
     ]
   };
@@ -33,7 +33,9 @@ const winRate = props => {
         options={{
           maintainAspectRatio: false,
           title: {
-            display: false
+            display: true,
+            text: "Average Damage / Games played",
+            fontSize: 25
           },
           legend: {
             display: true,
@@ -52,7 +54,7 @@ const winRate = props => {
 };
 
 const mapStateToProps = state => ({
-  winRate: state.get.historyStats.winRate
+  avgDmg: state.get.historyStats.avgDmg
 });
 
-export default connect(mapStateToProps, {})(winRate);
+export default connect(mapStateToProps, {})(avgDmg);

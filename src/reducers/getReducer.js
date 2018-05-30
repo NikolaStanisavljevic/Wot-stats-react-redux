@@ -283,64 +283,64 @@ historyStats : {
     } ],
     avgDmg: [{
         "Battles": "9812",
-        "Avrage": "913"
+        "Average": "913"
     }, {
         "Battles": "9908",
-        "Avrage": "916"
+        "Average": "916"
     }, {
         "Battles": "10015",
-        "Avrage": "919"
+        "Average": "919"
     }, {
         "Battles": "10112",
-        "Avrage": "921"
+        "Average": "921"
     }, {
         "Battles": "10217",
-        "Avrage": "925"
+        "Average": "925"
     }, {
         "Battles": "1307",
-        "Avrage": "926"
+        "Average": "926"
     }, {
         "Battles": "10397",
-        "Avrage": "927"
+        "Average": "927"
     }, {
         "Battles": "10469",
-        "Avrage": "928"
+        "Average": "928"
     }, {
         "Battles": "10621",
-        "Avrage": "930"
+        "Average": "930"
     }, {
         "Battles": "10714",
-        "Avrage": "932"
+        "Average": "932"
     }, {
         "Battles": "10815",
-        "Avrage": "936"
+        "Average": "936"
     }, {
         "Battles": "10890",
-        "Avrage": "937"
+        "Average": "937"
     }, {
         "Battles": "11003",
-        "Avrage": "937"
+        "Average": "937"
     }, {
         "Battles": "11102",
-        "Avrage": "941"
+        "Average": "941"
     }, {
         "Battles": "11236",
-        "Avrage": "942"
+        "Average": "942"
     }, {
         "Battles": "11321",
-        "Avrage": "942"
+        "Average": "942"
     }, {
         "Battles": "11416",
-        "Avrage": "945"
+        "Average": "945"
     }, {
         "Battles": "11520",
-        "Avrage": "950"
+        "Average": "950"
     }, {
         "Battles": "11642",
-        "Avrage": "950"
+        "Average": "950"
     }, {
         "Battles": "11723",
-        "Avrage": "952"
+        "Average": "952"
     } ]
 },
 vehiclesStats : [{

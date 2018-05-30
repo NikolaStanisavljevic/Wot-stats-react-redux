@@ -19,7 +19,7 @@ const wn8 = props => {
     labels: [...battles],
     datasets: [
       {
-        label: ["WN8/Games played"],
+        label: "WN8",
         data: [...wn8],
         backgroundColor: "#ECF0F1"
       }
@@ -33,7 +33,9 @@ const wn8 = props => {
         options={{
           maintainAspectRatio: false,
           title: {
-            display: false
+            display: true,
+            text: "WN8 / Games played",
+            fontSize: 25
           },
           legend: {
             display: true,

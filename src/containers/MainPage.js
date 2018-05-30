@@ -5,6 +5,7 @@ import TankStatsByTier from '../components/TankStats/TankStatsByTier/TankStatsBy
 import TankStatsByClass from '../components/TankStats/TankStatsByClass/TankStatsByClass';
 import WinRate from '../components/HistoryStats/WinRate/WinRate';
 import WN8 from '../components/HistoryStats/WN8/WN8';
+import AvgDmg from '../components/HistoryStats/AvgDmg/AvgDmg';
 
 export class Main extends Component {
     
@@ -13,6 +14,7 @@ export class Main extends Component {
       <div>
         <WinRate />
         <WN8 />
+        <AvgDmg />
       </div>
     )
   }
