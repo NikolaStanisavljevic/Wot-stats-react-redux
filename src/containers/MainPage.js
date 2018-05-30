@@ -6,15 +6,14 @@ import TankStatsByClass from '../components/TankStats/TankStatsByClass/TankStats
 import WinRate from '../components/HistoryStats/WinRate/WinRate';
 import WN8 from '../components/HistoryStats/WN8/WN8';
 import AvgDmg from '../components/HistoryStats/AvgDmg/AvgDmg';
+import MiniList from '../components/MiniList/MiniList';
 
 export class Main extends Component {
     
   render() {
     return (
       <div>
-        <WinRate />
-        <WN8 />
-        <AvgDmg />
+        <MiniList />
       </div>
     )
   }
