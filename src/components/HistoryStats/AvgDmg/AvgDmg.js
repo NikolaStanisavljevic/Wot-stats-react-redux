@@ -1,10 +1,9 @@
 import React from "react";
-import { Line} from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { connect } from "react-redux";
-import 'chartjs-plugin-deferred';
+import "chartjs-plugin-deferred";
 
 const avgDmg = props => {
-
   const data = props.avgDmg;
 
   const battles = data.map(res => {
@@ -41,12 +40,13 @@ const avgDmg = props => {
             display: true,
             position: "top"
           },
-            plugins: {
+          plugins: {
             deferred: {
-                xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
-                yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
-                delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
-            }}
+              xOffset: 150, // defer until 150px of the canvas width are inside the viewport
+              yOffset: "50%", // defer until 50% of the canvas height are inside the viewport
+              delay: 500 // delay of 500 ms after the canvas is considered inside the viewport
+            }
+          }
         }}
       />
     </div>
