@@ -3,6 +3,7 @@ import { Doughnut } from "react-chartjs-2";
 import { connect } from "react-redux";
 import './TankStatsByNation.css';
 import 'chart.piecelabel.js';
+import 'chartjs-plugin-deferred';
 
 const tankStatsByNation = props => {
 
@@ -54,7 +55,13 @@ const tankStatsByNation = props => {
           },
           pieceLabel: {
             render: 'percentage'
-         }
+         },
+         plugins: {
+          deferred: {
+            xOffset: 150,   // defer until 150px of the canvas width are inside the viewport
+            yOffset: '50%', // defer until 50% of the canvas height are inside the viewport
+            delay: 500      // delay of 500 ms after the canvas is considered inside the viewport
+          }}
         }}
       />
     </div>
