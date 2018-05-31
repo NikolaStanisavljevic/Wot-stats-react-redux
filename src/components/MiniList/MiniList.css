@@ -1,12 +1,9 @@
 th {
-    padding: 20px;
-   
+    padding: 20px;   
 }
-
 tr {
     border-bottom: 1px solid gray;
 }
-
 table {
     margin: 100px auto;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import { connect } from "react-redux";
 import "chart.piecelabel.js";
+import "chartjs-plugin-deferred";
 
 const tankStatsByTier = props => {
   const data = props.tankStatsByTier;
@@ -53,6 +54,13 @@ const tankStatsByTier = props => {
           },
           pieceLabel: {
             render: "percentage"
+          },
+          plugins: {
+            deferred: {
+              xOffset: 150, // defer until 150px of the canvas width are inside the viewport
+              yOffset: "50%", // defer until 50% of the canvas height are inside the viewport
+              delay: 500 // delay of 500 ms after the canvas is considered inside the viewport
+            }
           }
         }}
       />

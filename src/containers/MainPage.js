@@ -14,6 +14,9 @@ export class Main extends Component {
     return (
       <div>
         <MiniList />
+        <TankStatsByClass />
+        <TankStatsByNation />
+        <TankStatsByTier />
       </div>
     )
   }
