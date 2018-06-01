@@ -7,16 +7,14 @@ import WinRate from '../components/HistoryStats/WinRate/WinRate';
 import WN8 from '../components/HistoryStats/WN8/WN8';
 import AvgDmg from '../components/HistoryStats/AvgDmg/AvgDmg';
 import MiniList from '../components/MiniList/MiniList';
+import VehiclesList from '../components/VehiclesList/VehiclesList';
 
 export class Main extends Component {
     
   render() {
     return (
       <div>
-        <MiniList />
-        <TankStatsByClass />
-        <TankStatsByNation />
-        <TankStatsByTier />
+        <VehiclesList />
       </div>
     )
   }

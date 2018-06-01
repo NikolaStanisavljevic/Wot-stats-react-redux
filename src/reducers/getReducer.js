@@ -2231,23 +2231,6 @@ vehiclesStats : [{
     "WN8": "574"
   },
   {
-    "TankName": "Chi-Ha",
-    "Nation": "Japan",
-    "Type": "MT",
-    "Tier": "3",
-    "Battles": "14",
-    "WinRate": "57.14%",
-    "DPG": "152",
-    "ADB": "8",
-    "AvgSpot": "0.29",
-    "KPG": "0.5",
-    "HitRatio": "48%",
-    "AvgExp": "206",
-    "TotalExp": "2880",
-    "Mastery": "2nd Class",
-    "WN8": "476"
-  },
-  {
     "TankName": "Sherman III",
     "Nation": "UK",
     "Type": "MT",
