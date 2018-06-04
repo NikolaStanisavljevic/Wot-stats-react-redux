@@ -16,6 +16,7 @@ export class Main extends Component {
     return (
       <div>
         <LoadingScreen />
+        
       </div>
     )
   }

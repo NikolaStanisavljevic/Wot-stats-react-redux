@@ -52,7 +52,6 @@ const vehiclesList = props => {
       dataField: "DPG",
       text: "DPG",
       sort: true,
-      headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===6 ? 'Damage Per Game' : null},
       sortFunc: SortFunction
     },
@@ -60,7 +59,6 @@ const vehiclesList = props => {
       dataField: "ADB",
       text: "ADB",
       sort: true,
-      headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===7 ? 'Average Damage Blocked' : null},
       sortFunc: SortFunction
     },
@@ -68,7 +66,6 @@ const vehiclesList = props => {
       dataField: "AvgSpot",
       text: "Avg Spot",
       sort: true,
-      headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===8 ? 'Average Spotted Vehicles Per Game' : null},
       sortFunc: SortFunction
     },
@@ -76,7 +73,6 @@ const vehiclesList = props => {
       dataField: "KPG",
       text: "KPG",
       sort: true,
-      headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===9 ? 'Average Destoyed Vehicles Per Game' : null},
       sortFunc: SortFunction
     },
@@ -108,7 +104,6 @@ const vehiclesList = props => {
       text: "WN8",
       sort: true,
       style: ColorFunctionWN8,
-      headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===14 ? 'Custom Skill Metric' : null},
       sortFunc: SortFunction
     }
