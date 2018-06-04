@@ -7,6 +7,7 @@ import BootstrapTable from "react-bootstrap-table-next";
 import ColorFunctionPercent from './ColorFunctionPercent';
 import sortFunction from './SortFunction';
 import SortFunction from "./SortFunction";
+import SortFunctionPercent from './SortFunctionPercent';
 
 const vehiclesList = props => {
   const data = props.vehiclesStats;
@@ -44,14 +45,7 @@ const vehiclesList = props => {
       sort: true,
       // Get custom color of cell based on value
       style: ColorFunctionPercent,
-      sortFunc: (a, b, order, dataField) => {
-        const numA = a.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-        const numB = b.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-        if (order === 'asc') {
-          return numB - numA;
-        }
-        return numA - numB; // desc
-      }
+      sortFunc: SortFunctionPercent
     },
     {
       dataField: "DPG",
@@ -89,14 +83,7 @@ const vehiclesList = props => {
       dataField: "HitRatio",
       text: "Hit Ratio",
       sort: true,
-      sortFunc: (a, b, order, dataField) => {
-        const numA = a.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-        const numB = b.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-        if (order === 'asc') {
-          return numB - numA;
-        }
-        return numA - numB; // desc
-      }
+      sortFunc: SortFunctionPercent
     },
     {
       dataField: "AvgExp",
