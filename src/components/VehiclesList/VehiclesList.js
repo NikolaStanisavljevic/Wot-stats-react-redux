@@ -5,6 +5,8 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
 import BootstrapTable from "react-bootstrap-table-next";
 import ColorFunctionPercent from './ColorFunctionPercent';
+import sortFunction from './SortFunction';
+import SortFunction from "./SortFunction";
 
 const vehiclesList = props => {
   const data = props.vehiclesStats;
@@ -28,23 +30,13 @@ const vehiclesList = props => {
       dataField: "Tier",
       text: "Tier",
       sort: true,
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "Battles",
       text: "Battles",
       sort: true,
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: `WinRate`,
@@ -67,12 +59,7 @@ const vehiclesList = props => {
       sort: true,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===6 ? 'Damage Per Game' : null},
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "ADB",
@@ -80,12 +67,7 @@ const vehiclesList = props => {
       sort: true,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===7 ? 'Average Damage Blocked' : null},
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc 
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "AvgSpot",
@@ -93,12 +75,7 @@ const vehiclesList = props => {
       sort: true,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===8 ? 'Average Spotted Vehicles Per Game' : null},
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "KPG",
@@ -106,12 +83,7 @@ const vehiclesList = props => {
       sort: true,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===9 ? 'Average Destoyed Vehicles Per Game' : null},
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "HitRatio",
@@ -130,23 +102,13 @@ const vehiclesList = props => {
       dataField: "AvgExp",
       text: "Avg Exp",
       sort: true,
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "TotalExp",
       text: "Total Exp",
       sort: true,
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     },
     {
       dataField: "Mastery",
@@ -159,12 +121,7 @@ const vehiclesList = props => {
       sort: true,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===14 ? 'Custom Skill Metric' : null},
-      sortFunc: (a, b, order, dataField) => {
-        if (order === 'asc') {
-          return b - a;
-        }
-        return a - b; // desc
-      }
+      sortFunc: SortFunction
     }
   ];
   return (
