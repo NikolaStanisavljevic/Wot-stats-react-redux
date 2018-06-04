@@ -2,9 +2,9 @@ export default function callback(cell, row, rowIndex, colIndex) {
     const cellValue = cell.replace('%', '');
     if(cellValue< 46) {
         return { backgroundColor: '#930D0D', color: 'white' }
-    } else if ( cellValue > 46 && cellValue < 47 ){
+    } else if ( cellValue >= 46 && cellValue < 47 ){
       return { backgroundColor: '#CD3333', color: 'white' }
-    } else if ( cellValue > 47 && cellValue < 48 ){
+    } else if ( cellValue >= 47 && cellValue < 48 ){
       return { backgroundColor: '#CC7A00', color: 'white' }
     } else if ( cellValue >= 48 && cellValue < 50 ){
       return { backgroundColor: '#CC7A00', color: 'white' }

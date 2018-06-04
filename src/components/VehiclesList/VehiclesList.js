@@ -1,13 +1,14 @@
 import React from "react";
+import './VehiclesList.css';
 import { connect } from "react-redux";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import paginationFactory from "react-bootstrap-table2-paginator";
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
 import BootstrapTable from "react-bootstrap-table-next";
-import ColorFunctionPercent from './ColorFunctionPercent';
-import sortFunction from './SortFunction';
-import SortFunction from "./SortFunction";
-import SortFunctionPercent from './SortFunctionPercent';
+import ColorFunctionPercent from './Functions/ColorFunctionPercent';
+import SortFunction from "./Functions/SortFunction";
+import SortFunctionPercent from './Functions/SortFunctionPercent';
+import ColorFunctionWN8 from './Functions/ColorFunctionWN8';
 
 const vehiclesList = props => {
   const data = props.vehiclesStats;
@@ -106,6 +107,7 @@ const vehiclesList = props => {
       dataField: "WN8",
       text: "WN8",
       sort: true,
+      style: ColorFunctionWN8,
       headerTitle: true,
       headerTitle: function callback(column, colIndex) { return colIndex===14 ? 'Custom Skill Metric' : null},
       sortFunc: SortFunction
@@ -126,7 +128,4 @@ const mapStateToProps = state => ({
   vehiclesStats: state.get.vehiclesStats
 });
 
-export default connect(
- mapStateToProps,
-  {}
-)(vehiclesList);
+export default connect(mapStateToProps, {} )(vehiclesList);
