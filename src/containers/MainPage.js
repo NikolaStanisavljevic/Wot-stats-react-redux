@@ -8,13 +8,14 @@ import WN8 from '../components/HistoryStats/WN8/WN8';
 import AvgDmg from '../components/HistoryStats/AvgDmg/AvgDmg';
 import MiniList from '../components/MiniList/MiniList';
 import VehiclesList from '../components/VehiclesList/VehiclesList';
+import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 
 export class Main extends Component {
     
   render() {
     return (
       <div>
-        <VehiclesList />
+        <LoadingScreen />
       </div>
     )
   }
