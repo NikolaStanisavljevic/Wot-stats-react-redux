@@ -13,7 +13,6 @@ class basicStats extends Component {
 
     const stats = Object.keys(info).map((key, index) => {
       const myStats = info[key];
-      console.log(myStats);
       return (
         <ul key={index}>
           <li>xp: {myStats.xp}</li>

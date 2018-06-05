@@ -11,14 +11,38 @@ import VehiclesList from '../components/VehiclesList/VehiclesList';
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 
 export class Main extends Component {
-    
+    state = {
+      loadingDone : false
+    }
+
+
+    clickHandler = (props) => {
+      this.setState({
+        loadingDone: true
+      })
+    }
   render() {
-    return (
-      <div>
-        <LoadingScreen />
-        
-      </div>
-    )
+    if(!this.state.loadingDone){
+      return (
+        <div>
+          <LoadingScreen clicked={this.clickHandler}/>
+        </div>
+      )
+    } else {
+      return (
+        <div className='main'>
+          <BasicStats />
+          <TankStatsByNation />
+          <TankStatsByClass />
+          <TankStatsByTier />
+          <WinRate />
+          <WN8 />
+          <AvgDmg />
+          <MiniList/>
+          <VehiclesList/>
+        </div>
+      )
+    }  
   }
 }
 

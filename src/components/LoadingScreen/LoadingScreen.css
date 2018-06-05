@@ -1,8 +1,67 @@
 .Typist {
-    font-size: 46px;
+    font-size: 4rem;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
+    font-family: 'Playfair Display', serif;
+    display: block;
 }
+
+.btn {  
+    background: linear-gradient(to bottom,#fab81b 0%,#ef4511 100%) no-repeat 0,
+    linear-gradient(to bottom,#fab81b 0%,#ef4511 100%) no-repeat 100%,
+    #f25322 linear-gradient(to bottom,#f60 0%,#a6230e 100%) no-repeat;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-name: fadeIn;
+    animation-duration: 10s;
+}
+
+@media (max-width: 1200px) {
+    .Typist {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media (max-width: 1058px) {
+    .Typist {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .Typist {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .Typist {
+      font-size: 2rem;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    70% {
+      opacity: 0;
+    }
+    
+    80% {
+      opacity: 0.5;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
