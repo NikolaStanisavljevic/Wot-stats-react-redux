@@ -70,13 +70,6 @@ class basicStats extends Component {
           </tbody>
         </Table>
       </div>
-        // <ul key={index}>
-        //   <li><span>Battles</span> {myStats.battles}</li>
-        //   <li>draws: {myStats.draws}</li>
-        //   <li>hits: {myStats.hits}</li>
-        //   <li>wins: {myStats.wins}</li>
-        //   <li>battles: {myStats.battles}</li>
-        // </ul>
       );
     });
 

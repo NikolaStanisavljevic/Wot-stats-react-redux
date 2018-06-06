@@ -11,6 +11,7 @@ import MiniList from '../components/MiniList/MiniList';
 import VehiclesList from '../components/VehiclesList/VehiclesList';
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 
+
 export class Main extends Component {
     state = {
       loadingDone : false
@@ -32,13 +33,15 @@ export class Main extends Component {
     } else {
       return (
         <div className='main'>
-          <BasicStats />
-          <TankStatsByNation />
-          <TankStatsByTier />
-          <WinRate />
+          <BasicStats/>
+          <TankStatsByNation/>
+          <TankStatsByTier/>
+          <TankStatsByClass/>
+          <h1>Tanks Stats Summary by Class:</h1>
+          <MiniList/>
+          <WinRate/>
           <WN8 />
           <AvgDmg />
-          <MiniList/>
           <VehiclesList/>
         </div>
       )

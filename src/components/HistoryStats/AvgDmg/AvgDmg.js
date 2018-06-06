@@ -1,6 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { connect } from "react-redux";
+import './AvgDmg.css';
 import "chartjs-plugin-deferred";
 
 const avgDmg = props => {
@@ -26,7 +27,7 @@ const avgDmg = props => {
   };
 
   return (
-    <div className="chart">
+    <div className="chart avg">
       <Line
         data={chartData}
         options={{

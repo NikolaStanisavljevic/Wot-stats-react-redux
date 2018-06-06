@@ -37,7 +37,7 @@ const tankStatsByClass = props => {
   };
 
   return (
-    <div className="chart">
+    <div className="class">
       <Bar
         data={chartData}
         options={{

@@ -35,4 +35,7 @@
     .basic img {
         width: 35rem;
       }
+      .basic {
+        margin-bottom: 7rem;
+      }
   }
