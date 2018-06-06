@@ -22,7 +22,7 @@ export class Main extends Component {
       })
     }
   render() {
-    if(!this.state.loadingDone){
+    if(this.state.loadingDone){
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler}/>
