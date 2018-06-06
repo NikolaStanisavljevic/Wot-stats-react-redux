@@ -1,0 +1,38 @@
+.basic > h1 {
+    font-size: 4rem;
+}
+
+.basic table {
+  width:100%;
+  font-size: 2rem;
+  left:0;
+  border:none;
+}
+
+.basic h3 {
+  color:#212529;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.basic {
+  margin-bottom: 12rem;
+}
+
+@media (max-width: 900px) {
+    .basic h1 {
+      font-size: 3rem;
+    }
+    .basic img {
+        width: 50rem;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .basic h1 {
+      font-size: 2.5rem;
+    }
+    .basic img {
+        width: 35rem;
+      }
+  }

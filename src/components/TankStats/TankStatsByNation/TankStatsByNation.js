@@ -38,7 +38,7 @@ const tankStatsByNation = props => {
   };
 
   return (
-    <div className="chart">
+    <div className="chart nation">
       <Doughnut
         data={chartData}
         options={{

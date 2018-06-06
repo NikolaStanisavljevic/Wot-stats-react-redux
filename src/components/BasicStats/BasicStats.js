@@ -4,6 +4,7 @@ import './BasicStats.css';
 import { connect } from "react-redux";
 import { getStats } from "../../actions/getActions";
 import { Table } from 'reactstrap';
+import WotLogo from '../../assets/images/bigBoss_WOTdecal_Web.png';
 
 class basicStats extends Component {
   componentWillMount() {
@@ -25,10 +26,10 @@ class basicStats extends Component {
       const kdRatio = parseFloat(myStats.frags/deaths).toFixed(2);
       const dmgPerGame = parseFloat(myStats.battles/myStats.frags).toFixed(2);
       return (
-      <div>
+      <div className='basic'> 
+        <img src={WotLogo}></img>
         <h1>Beetlejuice91</h1>
-        
-        <Table bordered>
+        <Table bordered >
         <h3>Player statistics:</h3>
           <tbody>
             <tr>

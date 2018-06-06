@@ -1,6 +1,22 @@
-.chart {
+.nation {
     position: relative;
-    height: 40vh;
-    width: 50vw;
-    border: 1px solid black;
+    height: 65vh;
+    width: 50%; 
+    margin-bottom: 12rem auto;
+    display: inline-block;
 }
+
+@media (max-width: 1200px) {
+    .nation {
+      display: block;
+      width: 75vw;
+      margin-bottom: 8rem auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .nation {
+      height: 50vh;
+      margin-bottom: 5rem auto;
+    }
+  }

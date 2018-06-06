@@ -1,0 +1,22 @@
+.tier {
+    position: relative;
+    height: 65vh;
+    width: 50%; 
+    margin-bottom: 12rem auto;
+    display: inline-block;
+}
+
+@media (max-width: 1200px) {
+    .tier {
+      display: block;
+      width: 75vw;
+      margin-bottom: 8rem auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .tier {
+      height: 50vh;
+      margin-bottom: 5rem auto;
+    }
+  }

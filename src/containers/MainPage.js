@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './MainPage.css';
 import BasicStats from '../components/BasicStats/BasicStats';
 import TankStatsByNation from '../components/TankStats/TankStatsByNation/TankStatsByNation';
 import TankStatsByTier from '../components/TankStats/TankStatsByTier/TankStatsByTier';
@@ -33,7 +34,6 @@ export class Main extends Component {
         <div className='main'>
           <BasicStats />
           <TankStatsByNation />
-          <TankStatsByClass />
           <TankStatsByTier />
           <WinRate />
           <WN8 />
