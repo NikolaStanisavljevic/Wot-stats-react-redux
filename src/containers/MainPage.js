@@ -24,7 +24,7 @@ export class Main extends Component {
       })
     }
   render() {
-    if(this.state.loadingDone){
+    if(!this.state.loadingDone){
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler}/>
@@ -35,14 +35,14 @@ export class Main extends Component {
         <div className='main'>
           <BasicStats/>
           <TankStatsByNation/>
-          <TankStatsByTier/>
+          {/* <TankStatsByTier/>
           <TankStatsByClass/>
           <h1>Tanks Stats Summary by Class:</h1>
           <MiniList/>
           <WinRate/>
           <WN8 />
           <AvgDmg />
-          <VehiclesList/>
+          <VehiclesList/> */}
         </div>
       )
     }  
