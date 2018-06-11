@@ -10,7 +10,7 @@ import AvgDmg from '../components/HistoryStats/AvgDmg/AvgDmg';
 import MiniList from '../components/MiniList/MiniList';
 import VehiclesList from '../components/VehiclesList/VehiclesList';
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
-
+import Scrollspy from 'react-scrollspy';
 
 export class Main extends Component {
     state = {
@@ -44,18 +44,37 @@ export class Main extends Component {
       )
     } else {
       return (
-        <div className='main'>
-          <BasicStats/>
-          <TankStatsByNation/>
-          <TankStatsByTier/>
-          <TankStatsByClass/>
-          <h3>Tanks Stats Summary by Class:</h3>
-          <MiniList resize={this.state.smallTable}/>
-          <h3>History Stats:</h3>
-          <WinRate/>
-          <WN8 />
-          <AvgDmg />
-          <VehiclesList resize={this.state.smallTable}/>
+        <div>
+          <div className='main'>
+            <section id="section-1"><BasicStats /></section>
+            <section id="section-2">
+              <TankStatsByNation />
+              <TankStatsByTier/>
+              <TankStatsByClass/>
+            </section>
+            <section  id="section-3">
+              <h3>Tanks Stats Summary by Class:</h3>
+              <MiniList resize={this.state.smallTable}/>
+            </section>
+            <section  id="section-4">
+            <h3>History Stats:</h3>
+              <WinRate />
+              <WN8 />
+              <AvgDmg />
+            </section>
+            <section  id="section-5">
+              <VehiclesList resize={this.state.smallTable}/>
+            </section> 
+          </div>
+          <Scrollspy items={ ['section-1', 'section-2', 'section-3','section-4','section-5','section-6','section-7'] } 
+                      currentClassName="is-current"
+                      offset={ 100 }>
+            <li><a href="#section-1">section 1</a></li>
+            <li><a href="#section-2">section 2</a></li>
+            <li><a href="#section-3">section 3</a></li>
+            <li><a href="#section-4">section 4</a></li>
+            <li><a href="#section-5">section 5</a></li>
+          </Scrollspy>
         </div>
       )
     }  
