@@ -12,3 +12,9 @@
      font-size: 1.4rem;
     }
   }
+
+  @media (max-width: 750px) {
+    .table{
+     font-size: 1.2rem;
+    }
+  }

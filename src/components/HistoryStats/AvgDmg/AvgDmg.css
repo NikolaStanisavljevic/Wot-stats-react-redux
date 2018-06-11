@@ -5,3 +5,15 @@
         margin: 12rem auto;
         display: inline-block;
 }
+
+@media (max-width: 1200px) {
+        .avg {
+            margin: 6rem auto;
+        }
+      }
+
+@media (max-width: 500px) {
+        .avg {
+            margin: 3rem auto;
+        }
+      }

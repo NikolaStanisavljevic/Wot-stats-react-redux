@@ -4,12 +4,10 @@ import { connect } from "react-redux";
 import heavyLogo from "../../assets/images/heavyTank.png";
 import { Table } from "reactstrap";
 
-
-
 const miniList = props => {
   const data = props.miniList;
 
-  if (props.width > 700) {
+  if (!props.resize) {
     return (
       <Table responsive hover striped>
         <thead>
@@ -60,8 +58,6 @@ const miniList = props => {
       </Table>
     );
   }
-
-  
 };
 
 const mapStateToProps = state => ({

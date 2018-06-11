@@ -15,7 +15,8 @@ import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 export class Main extends Component {
     state = {
       loadingDone : false,
-      width : window.innerWidth
+      width : window.innerWidth,
+      smallTable : false
     }
 
 
@@ -24,8 +25,18 @@ export class Main extends Component {
         loadingDone: true
       })
     }
+
+    componentDidMount() {
+      window.addEventListener("resize", this.resize.bind(this));
+      this.resize();
+  }
+
+  resize() {
+    this.setState({smallTable: window.innerWidth <= 760});
+}
+
   render() {
-    if(this.state.loadingDone){
+    if(!this.state.loadingDone){
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler}/>
@@ -39,11 +50,12 @@ export class Main extends Component {
           <TankStatsByTier/>
           <TankStatsByClass/>
           <h3>Tanks Stats Summary by Class:</h3>
-          <MiniList width={this.state.width}/>
+          <MiniList resize={this.state.smallTable}/>
+          <h3>History Stats:</h3>
           <WinRate/>
           <WN8 />
           <AvgDmg />
-          <VehiclesList width={this.state.width}/>
+          <VehiclesList resize={this.state.smallTable}/>
         </div>
       )
     }  
