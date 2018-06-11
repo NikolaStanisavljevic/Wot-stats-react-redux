@@ -10,6 +10,7 @@
     font-size: 3rem;   
     text-align: left;
     padding: 4rem 0 2rem;
+    font-weight: 700;
 }
 
 @media (max-width: 900px) {
