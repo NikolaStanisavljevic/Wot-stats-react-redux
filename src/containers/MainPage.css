@@ -5,10 +5,15 @@
     
 }
 
-.main h1 {
+.main h3 {
     color:#212529;
     font-size: 3rem;   
     text-align: left;
-    margin-left: 4rem;
-    margin-bottom: 2.5rem;
+    padding: 4rem 0 2rem;
+}
+
+@media (max-width: 900px) {
+    .main h3 {
+        font-size: 2rem;
+    }
 }

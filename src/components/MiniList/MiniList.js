@@ -7,6 +7,62 @@ import { Table } from 'reactstrap';
 const miniList = (props) => {
 
     const data = props.miniList;
+    const width = window.innerWidth;
+    if (width>700) {
+        return (
+            <Table responsive hover striped>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Battles</th>
+                        <th>Victories</th>
+                        <th>Defeats</th>
+                        <th>WN8</th>
+                        <th>Win Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                    data.map((row, key) =>(
+                        <tr key={key}>
+                            <td>{row.Type}</td>
+                            <td>{row.Battles}</td>
+                            <td>{row.Victories}</td>
+                            <td>{row.Defeats}</td>
+                            <td>{row.WN8}</td>
+                            <td>{row.WR}</td>
+                        </tr>
+                    ))
+                  }
+                </tbody>
+            </Table>
+        )
+    } else {
+        return (
+            <Table responsive hover striped>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Battles</th>
+                        <th>WN8</th>
+                        <th>WR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                    data.map((row, key) =>(
+                        <tr key={key}>
+                            <td>{row.Type}</td>
+                            <td>{row.Battles}</td>
+                            <td>{row.WN8}</td>
+                            <td>{row.WR}</td>
+                        </tr>
+                    ))
+                  }
+                </tbody>
+            </Table>
+        )
+    }
     
   return (
       <Table responsive hover striped>

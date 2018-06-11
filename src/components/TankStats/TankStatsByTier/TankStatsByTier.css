@@ -10,13 +10,13 @@
     .tier {
       display: block;
       width: 75vw;
-      margin-bottom: 8rem auto;
+      margin: 0 0 6rem 0;
     }
   }
 
   @media (max-width: 500px) {
     .tier {
-      height: 50vh;
-      margin-bottom: 5rem auto;
+      height: 60vh;
+      margin: 0 0 2rem 0;
     }
   }

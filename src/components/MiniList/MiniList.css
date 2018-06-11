@@ -10,3 +10,9 @@ table {
     margin: 10px auto;
     font-size: 2rem;
 }
+
+@media (max-width: 500px) {
+    table {
+      font-size: 1.5rem;
+    }
+  }

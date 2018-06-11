@@ -26,11 +26,11 @@ class basicStats extends Component {
       const kdRatio = parseFloat(myStats.frags/deaths).toFixed(2);
       const dmgPerGame = parseFloat(myStats.battles/myStats.frags).toFixed(2);
       return (
-      <div className='basic'> 
+      <div className='basic' key={index}> 
         <img src={WotLogo}></img>
         <h1>Beetlejuice91</h1>
-        <Table bordered >
         <h3>Player statistics:</h3>
+        <Table bordered >
           <tbody>
             <tr>
               <th>Battles</th>
