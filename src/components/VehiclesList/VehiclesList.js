@@ -2,8 +2,8 @@ import React from "react";
 import './VehiclesList.css';
 import { connect } from "react-redux";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
-import paginationFactory from "react-bootstrap-table2-paginator";
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
+import paginationFactory from "react-bootstrap-table2-paginator";
 import BootstrapTable from "react-bootstrap-table-next";
 import ColorFunctionPercent from './Functions/ColorFunctionPercent';
 import SortFunction from "./Functions/SortFunction";
@@ -13,6 +13,7 @@ import ColorFunctionWN8 from './Functions/ColorFunctionWN8';
 const vehiclesList = props => {
   const data = props.vehiclesStats;
   const products = [...data];
+  const visibility = true;
   const columns = [
     {
       dataField: "TankName",

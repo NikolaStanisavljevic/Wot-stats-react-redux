@@ -14,7 +14,8 @@ import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 
 export class Main extends Component {
     state = {
-      loadingDone : false
+      loadingDone : false,
+      width : window.innerWidth
     }
 
 
@@ -38,11 +39,11 @@ export class Main extends Component {
           <TankStatsByTier/>
           <TankStatsByClass/>
           <h3>Tanks Stats Summary by Class:</h3>
-          <MiniList />
+          <MiniList width={this.state.width}/>
           <WinRate/>
           <WN8 />
           <AvgDmg />
-          <VehiclesList/>
+          <VehiclesList width={this.state.width}/>
         </div>
       )
     }  

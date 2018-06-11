@@ -1,101 +1,71 @@
-import React from 'react';
-import './MiniList.css';
+import React from "react";
+import "./MiniList.css";
 import { connect } from "react-redux";
-import heavyLogo from '../../assets/images/heavyTank.png';
-import { Table } from 'reactstrap';
+import heavyLogo from "../../assets/images/heavyTank.png";
+import { Table } from "reactstrap";
 
-const miniList = (props) => {
 
-    const data = props.miniList;
-    const width = window.innerWidth;
-    if (width>700) {
-        return (
-            <Table responsive hover striped>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Battles</th>
-                        <th>Victories</th>
-                        <th>Defeats</th>
-                        <th>WN8</th>
-                        <th>Win Rate</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                    data.map((row, key) =>(
-                        <tr key={key}>
-                            <td>{row.Type}</td>
-                            <td>{row.Battles}</td>
-                            <td>{row.Victories}</td>
-                            <td>{row.Defeats}</td>
-                            <td>{row.WN8}</td>
-                            <td>{row.WR}</td>
-                        </tr>
-                    ))
-                  }
-                </tbody>
-            </Table>
-        )
-    } else {
-        return (
-            <Table responsive hover striped>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Battles</th>
-                        <th>WN8</th>
-                        <th>WR</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                    data.map((row, key) =>(
-                        <tr key={key}>
-                            <td>{row.Type}</td>
-                            <td>{row.Battles}</td>
-                            <td>{row.WN8}</td>
-                            <td>{row.WR}</td>
-                        </tr>
-                    ))
-                  }
-                </tbody>
-            </Table>
-        )
-    }
-    
-  return (
+
+const miniList = props => {
+  const data = props.miniList;
+
+  if (props.width > 700) {
+    return (
       <Table responsive hover striped>
-          <thead>
-              <tr>
-                  <th>Type</th>
-                  <th>Battles</th>
-                  <th>Victories</th>
-                  <th>Defeats</th>
-                  <th>WN8</th>
-                  <th>Win Rate</th>
-              </tr>
-          </thead>
-          <tbody>
-              {
-              data.map((row, key) =>(
-                  <tr key={key}>
-                      <td>{row.Type}</td>
-                      <td>{row.Battles}</td>
-                      <td>{row.Victories}</td>
-                      <td>{row.Defeats}</td>
-                      <td>{row.WN8}</td>
-                      <td>{row.WR}</td>
-                  </tr>
-              ))
-            }
-          </tbody>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Battles</th>
+            <th>Victories</th>
+            <th>Defeats</th>
+            <th>WN8</th>
+            <th>Win Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, key) => (
+            <tr key={key}>
+              <td>{row.Type}</td>
+              <td>{row.Battles}</td>
+              <td>{row.Victories}</td>
+              <td>{row.Defeats}</td>
+              <td>{row.WN8}</td>
+              <td>{row.WR}</td>
+            </tr>
+          ))}
+        </tbody>
       </Table>
-  )
-}
+    );
+  } else {
+    return (
+      <Table responsive hover striped>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Battles</th>
+            <th>WN8</th>
+            <th>WR</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, key) => (
+            <tr key={key}>
+              <td>{row.Type}</td>
+              <td>{row.Battles}</td>
+              <td>{row.WN8}</td>
+              <td>{row.WR}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
+    );
+  }
+
+  
+};
 
 const mapStateToProps = state => ({
   miniList: state.get.miniListByClass
 });
 
-export default connect(mapStateToProps, {})(miniList);
+export default connect(mapStateToProps, {} )(miniList);

@@ -1,3 +1,14 @@
 #pageDropDown {
     display: none;
 }
+
+.table {
+    font-size: 1.8rem;
+    table-layout: auto;
+}
+
+@media (max-width: 1255px) {
+    .table{
+     font-size: 1.4rem;
+    }
+  }
