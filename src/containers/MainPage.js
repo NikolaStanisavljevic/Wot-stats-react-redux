@@ -16,7 +16,8 @@ import './Navigation.css';
 export class Main extends Component {
     state = {
       loadingDone : false,
-      smallTable : false
+      smallTable : false,
+      mobileTable : false
     }
 
 
@@ -32,11 +33,12 @@ export class Main extends Component {
   }
 
   resize() {
-    this.setState({smallTable: window.innerWidth <= 760});
+    this.setState({smallTable: window.innerWidth <= 900, mobileTable : window.innerWidth <= 500});
+    
 }
 
   render() {
-    if(!this.state.loadingDone){
+    if(this.state.loadingDone){
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler}/>
@@ -66,7 +68,7 @@ export class Main extends Component {
             </section>
             <section id="section-5">
               <h3>Vehicles List:</h3>
-              <VehiclesList resize={this.state.smallTable}/>
+              <VehiclesList small={this.state.smallTable} mobile={this.state.mobileTable}/>
             </section> 
           </div>
           <div className='dotstyle dotstyle-fillup'>

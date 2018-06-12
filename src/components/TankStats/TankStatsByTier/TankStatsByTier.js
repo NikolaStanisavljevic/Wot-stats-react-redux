@@ -59,7 +59,7 @@ const tankStatsByTier = props => {
           plugins: {
             deferred: {
               xOffset: 150, // defer until 150px of the canvas width are inside the viewport
-              yOffset: "100%", // defer until 50% of the canvas height are inside the viewport
+              yOffset: "101%", // defer until 101% of the canvas height are inside the viewport (fix for bug)
               delay: 500 // delay of 500 ms after the canvas is considered inside the viewport
             }
           }

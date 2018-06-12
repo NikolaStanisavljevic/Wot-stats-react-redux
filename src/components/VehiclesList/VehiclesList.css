@@ -7,6 +7,10 @@
     table-layout: auto;
 }
 
+.pagination {
+    font-size: 1.6rem;
+}
+
 @media (max-width: 1255px) {
     .table{
      font-size: 1.4rem;

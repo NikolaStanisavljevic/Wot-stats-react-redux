@@ -16,8 +16,8 @@
     position: relative;
     display: block;
     margin: 16px 0;
-    width: 16px;
-    height: 16px;
+    width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
   }
   
@@ -113,4 +113,12 @@
     opacity: 1;
     stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s, opacity 0.15s;
+  }
+
+
+  @media (max-width: 1255px) {
+    .dotstyle li {
+     width: 1.2rem;
+     height: 1.2rem;
+    }
   }

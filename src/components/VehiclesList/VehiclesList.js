@@ -14,7 +14,7 @@ const vehiclesList = props => {
   const data = props.vehiclesStats;
   const products = [...data];
 
-  if (!props.resize) {
+  if (!props.small) {
     var columns = [
       {
         dataField: "TankName",
@@ -120,7 +120,43 @@ const vehiclesList = props => {
         sortFunc: SortFunction
       }
     ];
-  } else {
+  } else if (props.mobile) {
+    var columns = [
+      {
+        dataField: "TankName",
+        text: "Tank Name"
+      },
+      {
+        dataField: "Type",
+        text: "Type",
+        sort: true
+      },
+      {
+        dataField: "Battles",
+        text: "Battles",
+        sort: true,
+        sortFunc: SortFunction
+      },
+      {
+        dataField: `WinRate`,
+        text: "Win Rate",
+        sort: true,
+        // Get custom color of cell based on value
+        style: ColorFunctionPercent,
+        sortFunc: SortFunctionPercent
+      },
+      {
+        dataField: "WN8",
+        text: "WN8",
+        sort: true,
+        style: ColorFunctionWN8,
+        headerTitle: function callback(column, colIndex) {
+          return colIndex === 14 ? "Custom Skill Metric" : null;
+        },
+        sortFunc: SortFunction
+      }
+    ];
+  } else if (props.small) {
     var columns = [
       {
         dataField: "TankName",
@@ -161,7 +197,7 @@ const vehiclesList = props => {
         sortFunc: SortFunction
       }
     ];
-  }
+  } 
 
   return (
     <BootstrapTable
