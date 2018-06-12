@@ -21,13 +21,13 @@ class basicStats extends Component {
 
       const vicPercent = parseFloat(myStats.wins/ (myStats.battles/100)).toFixed(2);
       const lossPercent = parseFloat(myStats.losses/ (myStats.battles/100)).toFixed(2);
-      const avgDamage = parseInt(myStats.damage_dealt/myStats.battles);
-      const deaths = parseInt(myStats.battles - myStats.survived_battles);
+      const avgDamage = parseInt(myStats.damage_dealt/myStats.battles,10);
+      const deaths = parseInt(myStats.battles - myStats.survived_battles,10);
       const kdRatio = parseFloat(myStats.frags/deaths).toFixed(2);
       const dmgPerGame = parseFloat(myStats.battles/myStats.frags).toFixed(2);
       return (
       <div className='basic' key={index}> 
-        <img src={WotLogo}></img>
+        <img src={WotLogo} alt='Logo'></img>
         <h1>Beetlejuice91</h1>
         <h3>Player statistics:</h3>
         <Table bordered >

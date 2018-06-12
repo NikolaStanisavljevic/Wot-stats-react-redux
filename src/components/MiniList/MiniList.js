@@ -1,7 +1,6 @@
 import React from "react";
 import "./MiniList.css";
 import { connect } from "react-redux";
-import heavyLogo from "../../assets/images/heavyTank.png";
 import { Table } from "reactstrap";
 
 const miniList = props => {

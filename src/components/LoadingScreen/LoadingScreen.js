@@ -4,13 +4,14 @@ import video from "../../assets/videos/LSVideo.mp4";
 import Typist from 'react-typist';
 
 const loadingScreen = (props) => {
+  
     const cursor = {
         show: true,
         blink: true,
         element: '|',
         hideWhenDone: true,
       };
-console.log(props.cliked);
+
   return (
     <div style={{
           width: "100vw",
@@ -31,7 +32,7 @@ console.log(props.cliked);
       />
       <div className='parent'>
         <Typist cursor={cursor}>
-          <span className="typed"> Welcome to World of Tanks statistic site..</span>
+          <span className="typed"> Welcome to World of Tanks statistics site..</span>
           <br />
           <Typist.Delay ms={500} />
               Press lets go when you are ready!                      

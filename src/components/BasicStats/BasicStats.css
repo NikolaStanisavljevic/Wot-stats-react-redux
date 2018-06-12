@@ -48,3 +48,9 @@
         margin-bottom: 7rem;
       }
   }
+
+  @media (max-width: 600px) {
+    .basic img {
+      width: 32.5rem;
+    }
+  }

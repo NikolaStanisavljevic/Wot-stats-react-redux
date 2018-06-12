@@ -121,7 +121,7 @@ const vehiclesList = props => {
       }
     ];
   } else if (props.mobile) {
-    var columns = [
+     columns = [
       {
         dataField: "TankName",
         text: "Tank Name"
@@ -157,7 +157,7 @@ const vehiclesList = props => {
       }
     ];
   } else if (props.small) {
-    var columns = [
+     columns = [
       {
         dataField: "TankName",
         text: "Tank Name"

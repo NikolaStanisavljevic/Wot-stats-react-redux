@@ -32,6 +32,10 @@ export class Main extends Component {
     this.resize();
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize.bind(this))
+  }
+
   resize() {
     this.setState({
       smallTable: window.innerWidth <= 900,
