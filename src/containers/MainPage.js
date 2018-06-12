@@ -11,11 +11,11 @@ import MiniList from '../components/MiniList/MiniList';
 import VehiclesList from '../components/VehiclesList/VehiclesList';
 import LoadingScreen from '../components/LoadingScreen/LoadingScreen';
 import Scrollspy from 'react-scrollspy';
+import './Navigation.css';
 
 export class Main extends Component {
     state = {
       loadingDone : false,
-      width : window.innerWidth,
       smallTable : false
     }
 
@@ -36,7 +36,7 @@ export class Main extends Component {
 }
 
   render() {
-    if(this.state.loadingDone){
+    if(!this.state.loadingDone){
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler}/>
@@ -46,35 +46,39 @@ export class Main extends Component {
       return (
         <div>
           <div className='main'>
-            <section id="section-1"><BasicStats /></section>
+            <section id="section-1">
+              <BasicStats />
+            </section>
             <section id="section-2">
               <TankStatsByNation />
               <TankStatsByTier/>
               <TankStatsByClass/>
             </section>
-            <section  id="section-3">
+            <section id="section-3">
               <h3>Tanks Stats Summary by Class:</h3>
               <MiniList resize={this.state.smallTable}/>
             </section>
-            <section  id="section-4">
+            <section id="section-4">
             <h3>History Stats:</h3>
               <WinRate />
               <WN8 />
               <AvgDmg />
             </section>
-            <section  id="section-5">
+            <section id="section-5">
+              <h3>Vehicles List:</h3>
               <VehiclesList resize={this.state.smallTable}/>
             </section> 
           </div>
-          <Scrollspy items={ ['section-1', 'section-2', 'section-3','section-4','section-5','section-6','section-7'] } 
-                      currentClassName="is-current"
-                      offset={ 100 }>
-            <li><a href="#section-1">section 1</a></li>
-            <li><a href="#section-2">section 2</a></li>
-            <li><a href="#section-3">section 3</a></li>
-            <li><a href="#section-4">section 4</a></li>
-            <li><a href="#section-5">section 5</a></li>
-          </Scrollspy>
+          <div className='dotstyle dotstyle-fillup'>
+            <Scrollspy items={ ['section-1', 'section-2', 'section-3','section-4','section-5'] } 
+                        currentClassName="current" >
+              <li><a href="#section-1">section 1</a></li>
+              <li><a href="#section-2">section 2</a></li>
+              <li><a href="#section-3">section 3</a></li>
+              <li><a href="#section-4">section 4</a></li>
+              <li><a href="#section-5">section 5</a></li>
+            </Scrollspy>
+           </div> 
         </div>
       )
     }  
