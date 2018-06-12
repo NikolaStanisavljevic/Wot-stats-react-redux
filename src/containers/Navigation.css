@@ -1,83 +1,79 @@
 /* styling scrollspy */
 
 .dotstyle ul {
-    position: fixed;
-    left: 4%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    cursor: default;
-  }
-  
-  .dotstyle li {
-    position: relative;
-    display: block;
-    margin: 16px 0;
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-  }
-  
-  .dotstyle li a {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border-radius: 50%;
-    background-color: #fff;
-    background-color: rgba(255,255,255,0.3);
-    text-indent: -999em;
-    cursor: pointer; /* make the text accessible to screen readers */
-    position: absolute;
-  }
-  
-  
-  /* Fill up */
-  
-  .dotstyle-fillup li a {
+  position: fixed;
+  left: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+}
+
+.dotstyle li {
+  position: relative;
+  display: block;
+  margin: 16px 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.dotstyle li a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-indent: -999em;
+  cursor: pointer;
+  /* make the text accessible to screen readers */
+  position: absolute;
+}
+
+/* Fill up */
+
+.dotstyle-fillup li a {
   overflow: hidden;
-  background: linear-gradient(to bottom,#fab81b 0%,#ef4511 100%) no-repeat 0,
-  linear-gradient(to bottom,#fab81b 0%,#ef4511 100%) no-repeat 100%,
-  #f25322 linear-gradient(to bottom,#f60 0%,#a6230e 100%) no-repeat;
-  box-shadow: inset 0 0 0 2px rgba(255,255,255,1);
+  background: black;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1);
   transition: background 0.3s;
-  }
-  
-  .dotstyle-fillup li a::after {
+}
+
+.dotstyle-fillup li a::after {
   content: '';
   position: absolute;
   bottom: 0;
   height: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom,#c28a08 0%,#df3f0e 100%) no-repeat 0,
-  linear-gradient(to bottom,#fab81b 0%,#ef4511 100%) no-repeat 100%,
-  #f25322 linear-gradient(to bottom,#f60 0%,#a6230e 100%) no-repeat;
+  background: #ECF0F1;
   box-shadow: 0 0 1px #fff;
   transition: height 0.3s;
-  }
-  
-  .dotstyle-fillup li a:hover,
-  .dotstyle-fillup li a:focus {
-  background-color: rgba(0,0,0,0.2);
-  }
-  
-  .dotstyle-fillup li.current a::after {
+}
+
+.dotstyle-fillup li a:hover,
+.dotstyle-fillup li a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dotstyle-fillup li.current a::after {
   height: 100%;
-  }
-  
-  
-  /* SVG draw circle stroke */	
-  .dotstyle-drawcircle li {
+}
+
+/* SVG draw circle stroke */
+
+.dotstyle-drawcircle li {
   width: 18px;
   height: 18px;
-  }
-  
-  .dotstyle-drawcircle li a {
+}
+
+.dotstyle-drawcircle li a {
   top: 3px;
   left: 3px;
   width: 12px;
@@ -85,40 +81,40 @@
   background-color: #c44d48;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  }
-  
-  .dotstyle-drawcircle li svg {
+}
+
+.dotstyle-drawcircle li svg {
   z-index: 10;
-  }
-  
-  .dotstyle-drawcircle li svg circle {
+}
+
+.dotstyle-drawcircle li svg circle {
   opacity: 0;
   fill: none;
   stroke: #fff;
   stroke-width: 3;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-dasharray: 39 39; 
-  stroke-dashoffset: 39; /* ~ length of circle path (pi*2r) */
+  stroke-dasharray: 39 39;
+  stroke-dashoffset: 39;
+  /* ~ length of circle path (pi*2r) */
   transition: stroke-dashoffset 0.3s, opacity 0.3s;
-  }
-  
-  .dotstyle-drawcircle li.current a,
-  .dotstyle-drawcircle li a:hover,
-  .dotstyle-drawcircle li a:focus {
+}
+
+.dotstyle-drawcircle li.current a,
+.dotstyle-drawcircle li a:hover,
+.dotstyle-drawcircle li a:focus {
   opacity: 0.5;
-  }
-  
-  .dotstyle-drawcircle li.current svg circle {
-    opacity: 1;
-    stroke-dashoffset: 0;
+}
+
+.dotstyle-drawcircle li.current svg circle {
+  opacity: 1;
+  stroke-dashoffset: 0;
   transition: stroke-dashoffset 0.3s, opacity 0.15s;
-  }
+}
 
-
-  @media (max-width: 1255px) {
-    .dotstyle li {
-     width: 1.2rem;
-     height: 1.2rem;
-    }
+@media (max-width: 1255px) {
+  .dotstyle li {
+    width: 1.2rem;
+    height: 1.2rem;
   }
+}
