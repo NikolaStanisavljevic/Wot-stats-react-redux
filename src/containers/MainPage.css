@@ -17,6 +17,10 @@
     margin-bottom: 6rem;
 }
 
+#section-4 {
+    padding-top: 8rem; 
+}
+
 @media (max-width: 900px) {
     .main h3 {
         font-size: 2rem;
