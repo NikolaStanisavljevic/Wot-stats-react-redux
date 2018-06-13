@@ -5,6 +5,19 @@
 .table {
     font-size: 1.8rem;
     table-layout: auto;
+    position: relative;
+}
+
+.form-control {
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    width: 20% !important;
+    font-size: 1.7rem !important;   
+}
+
+.table input {
+    border-radius: 1rem;
 }
 
 .pagination {
@@ -15,10 +28,19 @@
     .table{
      font-size: 1.4rem;
     }
+    
+    .form-control {
+        width: 30% !important;
+        font-size: 1.4rem !important;
+    }
   }
 
   @media (max-width: 750px) {
     .table{
      font-size: 1.2rem;
+    }
+    .form-control {
+        width: 30% !important;
+        font-size: 1.2rem !important;
     }
   }

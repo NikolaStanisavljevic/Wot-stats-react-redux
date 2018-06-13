@@ -44,7 +44,7 @@ export class Main extends Component {
   }
 
   render() {
-    if (!this.state.loadingDone) {
+    if (this.state.loadingDone) {
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler} />
@@ -73,7 +73,7 @@ export class Main extends Component {
               <AvgDmg />
             </section>
             <section id="section-5">
-              <h3>Vehicles List:</h3>
+              <h3 class='last'>Vehicles List:</h3>
               <VehiclesList
                 small={this.state.smallTable}
                 mobile={this.state.mobileTable}
