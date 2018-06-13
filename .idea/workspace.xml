@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea9ad62-cc1e-4ac6-bf44-1f9511844089" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/.eslintrc" afterPath="$PROJECT_DIR$/src/.eslintrc" />
-      <change beforePath="$PROJECT_DIR$/src/actions/getActions.js" afterPath="$PROJECT_DIR$/src/actions/getActions.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/BasicStats/BasicStats.js" afterPath="$PROJECT_DIR$/src/components/BasicStats/BasicStats.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/HistoryStats/AvgDmg/AvgDmg.js" afterPath="$PROJECT_DIR$/src/components/HistoryStats/AvgDmg/AvgDmg.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/HistoryStats/WN8/WN8.js" afterPath="$PROJECT_DIR$/src/components/HistoryStats/WN8/WN8.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/HistoryStats/WinRate/WinRate.js" afterPath="$PROJECT_DIR$/src/components/HistoryStats/WinRate/WinRate.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingScreen/LoadingScreen.css" afterPath="$PROJECT_DIR$/src/components/LoadingScreen/LoadingScreen.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadingScreen/LoadingScreen.js" afterPath="$PROJECT_DIR$/src/components/LoadingScreen/LoadingScreen.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/MiniList/MiniList.css" afterPath="$PROJECT_DIR$/src/components/MiniList/MiniList.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/MiniList/MiniList.js" afterPath="$PROJECT_DIR$/src/components/MiniList/MiniList.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/TankStats/TankStatsByClass/TankStatsByClass.js" afterPath="$PROJECT_DIR$/src/components/TankStats/TankStatsByClass/TankStatsByClass.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/TankStats/TankStatsByNation/TankStatsByNation.css" afterPath="$PROJECT_DIR$/src/components/TankStats/TankStatsByNation/TankStatsByNation.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/TankStats/TankStatsByNation/TankStatsByNation.js" afterPath="$PROJECT_DIR$/src/components/TankStats/TankStatsByNation/TankStatsByNation.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/TankStats/TankStatsByTier/TankStatsByTier.js" afterPath="$PROJECT_DIR$/src/components/TankStats/TankStatsByTier/TankStatsByTier.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/Functions/ColorFunctionPercent.js" afterPath="$PROJECT_DIR$/src/components/VehiclesList/Functions/ColorFunctionPercent.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/Functions/ColorFunctionWN8.js" afterPath="$PROJECT_DIR$/src/components/VehiclesList/Functions/ColorFunctionWN8.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/Functions/SortFunction.js" afterPath="$PROJECT_DIR$/src/components/VehiclesList/Functions/SortFunction.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/Functions/SortFunctionPercent.js" afterPath="$PROJECT_DIR$/src/components/VehiclesList/Functions/SortFunctionPercent.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/VehiclesList.css" afterPath="$PROJECT_DIR$/src/components/VehiclesList/VehiclesList.css" />
-      <change beforePath="$PROJECT_DIR$/src/components/VehiclesList/VehiclesList.js" afterPath="$PROJECT_DIR$/src/components/VehiclesList/VehiclesList.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainPage.css" afterPath="$PROJECT_DIR$/src/containers/MainPage.css" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MainPage.js" afterPath="$PROJECT_DIR$/src/containers/MainPage.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/getReducer.js" afterPath="$PROJECT_DIR$/src/reducers/getReducer.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/store.js" afterPath="$PROJECT_DIR$/src/store.js" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,10 +12,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="572">
+                <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -74,6 +71,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -85,7 +83,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -119,33 +116,35 @@
       <option name="presentableId" value="Default" />
       <updated>1528311826712</updated>
       <workItem from="1528311830852" duration="364000" />
+      <workItem from="1528896729222" duration="2904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364000" />
+    <option name="totallyTimeSpent" value="3268000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15938166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33043477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -164,9 +163,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -174,7 +170,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="572">
+            <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
