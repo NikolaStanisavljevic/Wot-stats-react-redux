@@ -54,3 +54,15 @@
       width: 32.5rem;
     }
   }
+
+  @media (max-width: 400px) {
+    .basic img {
+      width: 28rem;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .basic img {
+      width: 24.5rem;
+    }
+  }

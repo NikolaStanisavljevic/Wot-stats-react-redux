@@ -14,3 +14,9 @@
     color: #c28a08;
     text-decoration: none;
 }
+
+@media (max-width: 500px) {
+    .footer {
+        font-size: 1.2rem;
+    }
+}

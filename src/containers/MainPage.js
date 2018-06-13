@@ -18,7 +18,8 @@ export class Main extends Component {
   state = {
     loadingDone: false,
     smallTable: false,
-    mobileTable: false
+    mobileTable: false,
+    smallMobileTable : false
   };
 
   clickHandler = props => {
@@ -39,7 +40,8 @@ export class Main extends Component {
   resize() {
     this.setState({
       smallTable: window.innerWidth <= 900,
-      mobileTable: window.innerWidth <= 500
+      mobileTable: window.innerWidth <= 500,
+      smallMobileTable : window.innerWidth <= 350
     });
   }
 
@@ -58,8 +60,8 @@ export class Main extends Component {
               <BasicStats />
             </section>
             <section id="section-2">
-              <TankStatsByNation />
-              <TankStatsByTier />
+              <TankStatsByNation small={this.state.smallMobileTable}/>
+              <TankStatsByTier small={this.state.smallMobileTable}/>
               <TankStatsByClass />
             </section>
             <section id="section-3">

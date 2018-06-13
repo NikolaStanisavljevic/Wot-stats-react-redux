@@ -49,7 +49,7 @@ const tankStatsByNation = props => {
             fontSize: 25
           },
           legend: {
-            display: true,
+            display: !props.small,
             position: "right"
           },
           pieceLabel: {
