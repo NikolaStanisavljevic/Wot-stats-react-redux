@@ -5,8 +5,7 @@ import { Table } from "reactstrap";
 
 const miniList = props => {
   const data = props.miniList;
-
-  if (!props.resize) {
+  if (!props.resize) { // Make it responsive while resize window
     return (
       <Table responsive hover striped>
         <thead>

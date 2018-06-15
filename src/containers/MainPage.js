@@ -28,15 +28,16 @@ export class Main extends Component {
     });
   };
 
+  // Make event listener on screen resize so i can control numbers of columns in tables based on screen width.
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
   }
-
+  // Remove listener, throttle the force update.  
   componentWillUnmount() {
     window.removeEventListener('resize', this.resize.bind(this))
   }
-
+  // Function that 'listen' to srceen resize
   resize() {
     this.setState({
       smallTable: window.innerWidth <= 900,
@@ -46,13 +47,13 @@ export class Main extends Component {
   }
 
   render() {
-    if (!this.state.loadingDone) {
+    if (!this.state.loadingDone) { // Show Loading Screen
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler} />
         </div>
       );
-    } else {
+    } else { // Display Data
       return (
         <div>
           <div className="main">
@@ -75,7 +76,7 @@ export class Main extends Component {
               <AvgDmg />
             </section>
             <section id="section-5">
-              <h3 class='last'>Vehicles List:</h3>
+              <h3 className='last'>Vehicles List:</h3>
               <VehiclesList
                 small={this.state.smallTable}
                 mobile={this.state.mobileTable}
