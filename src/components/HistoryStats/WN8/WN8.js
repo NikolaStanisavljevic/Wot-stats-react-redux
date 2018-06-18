@@ -1,7 +1,7 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { connect } from "react-redux";
-import './WN8.css';
+import "./WN8.css";
 import "chartjs-plugin-deferred";
 
 const wn8 = props => {

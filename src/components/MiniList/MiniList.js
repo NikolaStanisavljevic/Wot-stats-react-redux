@@ -3,11 +3,10 @@ import "./MiniList.css";
 import { connect } from "react-redux";
 import { Table } from "reactstrap";
 
-
-
 const miniList = props => {
   const data = props.miniList;
-  if (!props.resize) { // Make it responsive while resize window
+  // Make it responsive while resize window
+  if (!props.resize) {
     return (
       <Table responsive hover striped>
         <thead>
@@ -23,7 +22,7 @@ const miniList = props => {
         <tbody>
           {data.map((row, key) => (
             <tr key={key}>
-              <td className={'class'+ key}></td>
+              <td className={"class" + key} />
               <td>{row.Battles}</td>
               <td>{row.Victories}</td>
               <td>{row.Defeats}</td>

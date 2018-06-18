@@ -14,7 +14,7 @@ const tankStatsByClass = props => {
   const games = data.map(res => {
     return res.Games;
   });
-  
+
   const chartData = {
     labels: [...nations],
     datasets: [

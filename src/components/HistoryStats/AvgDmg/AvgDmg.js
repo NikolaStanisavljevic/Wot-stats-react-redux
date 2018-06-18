@@ -1,8 +1,8 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { connect } from "react-redux";
-import './AvgDmg.css';
 import "chartjs-plugin-deferred";
+import "./AvgDmg.css";
 
 const avgDmg = props => {
   const data = props.avgDmg;

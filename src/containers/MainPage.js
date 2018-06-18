@@ -10,7 +10,7 @@ import AvgDmg from "../components/HistoryStats/AvgDmg/AvgDmg";
 import MiniList from "../components/MiniList/MiniList";
 import VehiclesList from "../components/VehiclesList/VehiclesList";
 import LoadingScreen from "../components/LoadingScreen/LoadingScreen";
-import Footer from '../components/Footer/Footer';
+import Footer from "../components/Footer/Footer";
 import Scrollspy from "react-scrollspy";
 import "./Navigation.css";
 
@@ -19,7 +19,7 @@ export class Main extends Component {
     loadingDone: false,
     smallTable: false,
     mobileTable: false,
-    smallMobileTable : false
+    smallMobileTable: false
   };
 
   clickHandler = props => {
@@ -33,27 +33,29 @@ export class Main extends Component {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
   }
-  // Remove listener, throttle the force update.  
+  // Remove listener, throttle the force update.
   componentWillUnmount() {
-    window.removeEventListener('resize', this.resize.bind(this))
+    window.removeEventListener("resize", this.resize.bind(this));
   }
   // Function that 'listen' to srceen resize
   resize() {
     this.setState({
       smallTable: window.innerWidth <= 900,
       mobileTable: window.innerWidth <= 500,
-      smallMobileTable : window.innerWidth <= 350
+      smallMobileTable: window.innerWidth <= 350
     });
   }
 
   render() {
-    if (!this.state.loadingDone) { // Show Loading Screen
+    // Show Loading Screen
+    if (!this.state.loadingDone) {
       return (
         <div>
           <LoadingScreen clicked={this.clickHandler} />
         </div>
       );
-    } else { // Display Data
+      // Display Data
+    } else {
       return (
         <div>
           <div className="main">
@@ -61,8 +63,8 @@ export class Main extends Component {
               <BasicStats />
             </section>
             <section id="section-2">
-              <TankStatsByNation small={this.state.smallMobileTable}/>
-              <TankStatsByTier small={this.state.smallMobileTable}/>
+              <TankStatsByNation small={this.state.smallMobileTable} />
+              <TankStatsByTier small={this.state.smallMobileTable} />
               <TankStatsByClass />
             </section>
             <section id="section-3">
@@ -76,7 +78,7 @@ export class Main extends Component {
               <AvgDmg />
             </section>
             <section id="section-5">
-              <h3 className='last'>Vehicles List:</h3>
+              <h3 className="last">Vehicles List:</h3>
               <VehiclesList
                 small={this.state.smallTable}
                 mobile={this.state.mobileTable}
@@ -85,7 +87,7 @@ export class Main extends Component {
             </section>
           </div>
           <div className="dotstyle dotstyle-fillup">
-            <Scrollspy items={["section-1","section-2","section-3","section-4","section-5"]} currentClassName="current">
+            <Scrollspy items= {["section-1", "section-2", "section-3", "section-4", "section-5"]} currentClassName= "current">
               <li>
                 <a href="#section-1">section 1</a>
               </li>

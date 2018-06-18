@@ -2,9 +2,9 @@ import React from "react";
 import "./VehiclesList.css";
 import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
 import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
-import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css';
+import "react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css";
 import { connect } from "react-redux";
-import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
+import filterFactory, { textFilter } from "react-bootstrap-table2-filter";
 import paginationFactory from "react-bootstrap-table2-paginator";
 import BootstrapTable from "react-bootstrap-table-next";
 import ColorFunctionPercent from "./Functions/ColorFunctionPercent";
@@ -202,14 +202,14 @@ const vehiclesList = props => {
         sortFunc: SortFunction
       }
     ];
-  } 
+  }
 
   return (
     <BootstrapTable
       keyField="TankName"
       data={products}
       columns={columns}
-      filter= {filterFactory()}
+      filter={filterFactory()}
       pagination={paginationFactory()}
       striped
     />

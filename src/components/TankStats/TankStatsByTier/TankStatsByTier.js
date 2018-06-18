@@ -3,7 +3,7 @@ import { Doughnut } from "react-chartjs-2";
 import { connect } from "react-redux";
 import "chart.piecelabel.js";
 import "chartjs-plugin-deferred";
-import './TankStatsByTier.css';
+import "./TankStatsByTier.css";
 
 const tankStatsByTier = props => {
   const data = props.tankStatsByTier;
