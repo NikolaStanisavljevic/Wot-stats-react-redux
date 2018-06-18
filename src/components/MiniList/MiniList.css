@@ -16,3 +16,34 @@ table {
       font-size: 1.5rem;
     }
   }
+
+  .class0 {
+    background-image: url('../../assets/images/heavyTank.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .class1 {
+    background-image: url('../../assets/images/mediumTank.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .class2 {
+    background-image: url('../../assets/images/lightTank.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .class3 {
+    background-image: url('../../assets/images/TD.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .class4 {
+    background-image: url('../../assets/images/SPG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }

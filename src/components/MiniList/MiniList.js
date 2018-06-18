@@ -3,6 +3,8 @@ import "./MiniList.css";
 import { connect } from "react-redux";
 import { Table } from "reactstrap";
 
+
+
 const miniList = props => {
   const data = props.miniList;
   if (!props.resize) { // Make it responsive while resize window
@@ -21,7 +23,7 @@ const miniList = props => {
         <tbody>
           {data.map((row, key) => (
             <tr key={key}>
-              <td>{row.Type}</td>
+              <td className={'class'+ key}></td>
               <td>{row.Battles}</td>
               <td>{row.Victories}</td>
               <td>{row.Defeats}</td>
@@ -46,7 +48,7 @@ const miniList = props => {
         <tbody>
           {data.map((row, key) => (
             <tr key={key}>
-              <td>{row.Type}</td>
+              <td className={'class'+ key}></td>
               <td>{row.Battles}</td>
               <td>{row.WN8}</td>
               <td>{row.WR}</td>
